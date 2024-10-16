@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JBee Meliponário - Curiosidades</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+
+    <link rel="shortcut icon" href="IMAGENS/Jbee.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div class="background">
+        <div class="header">
+            <div class="buttons">
+                <a href="jatai.html"><button>Início</button></a>
+                <a href="caracteristicas_jatai.html"><button>Características</button></a>
+                <a href="comportamento_jatai.html"><button>Comportamento</button></a>
+                <a href="curiosidades_jatai.html"><button>Curiosidades</button></a>
+            </div>
+        </div>
+        <div class="maintext">
+            <p class="text">
+                <b>Curiosidades</b>
+
+                <br><br>
+
+                <b>Nomes populares:</b> Jatai, essa abelha também é conhecida como Jataí-amarela ou Abelha-ouro em
+                algumas regions
+
+                <br><br>
+
+                O mel da Jataí, além de saboroso e suave, é bastante procurado por suas propriedades medicinais. É usado como fortificante e anti-inflamatório,
+                em particular dos olhos. Além do mel, a Jataí produz própolis, cera e pólen de boa qualidade. Em comparação com as abelhas com ferrão, produz menor quantidade,
+                mas o preço de venda é bem maior:<br>
+                <font color="red"><u>um litro desse mel pode chegar a 100 reais.</u></font>
+
+            </p>
+        </div>
+        <div class="divimagem">
+
+            <img src="IMAGENS/Propólis.jpg" alt="Própolis" class="img" id="produto">
+            <label for="produto">Produto feito de própolis (Não patrocinado)</label>
+
+            <img src="IMAGENS/Mel_abelha_jatai.jpg" alt="Própolis" class="img" id="produto">
+            <label for="produto">Pote de Mel da Abelha Jatai (Não patrocinado)</label>
+        </div>
+    </div>
+    <center><p style="color: #a65c02; size: 5px;">®pesquisa por: Murilo Trida e Samuel</p><br>
+        <div class="menu-flutuante">
+            <button class="botao-menu" onclick="toggleMenu()">
+                <div class="palito"></div>
+                <div class="palito"></div>
+                <div class="palito"></div>
+            </button>
+            <div class="opcoes-menu">
+                <a href="principal.html">Página Inicial</a>
+                <a href="galeria.html">Galeria</a>
+            </div>
+        </div>
+        <script>
+            function toggleMenu() {
+                document.querySelector('.opcoes-menu').classList.toggle('ativo');
+            }
+        </script>
+</body>
+
+</html>

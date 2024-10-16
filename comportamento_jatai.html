@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JBee Meliponário</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+
+    <link rel="shortcut icon" href="IMAGENS/Jbee.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div class="background">
+        <div class="header">
+            <div class="buttons">
+                <a href="jatai.html"><button>Início</button></a>
+                <a href="caracteristicas_jatai.html"><button class="btn-large">Características</button></a>
+                <a href="comportamento_jatai.html"><button class="btn-large">Comportamento</button></a>
+                <a href="curiosidades_jatai.html"><button>Curiosidades</button></a>
+            </div>
+        </div>
+        <div class="maintext">
+            <p class="text">
+                <b>Características Gerais e Hábitos</b>
+
+                <br><br>
+
+                Algumas abelhas adotam táticas suicidas, como é o caso das guardas da jataí: na briga, elas travam suas mandíbulas nas asas,
+                pernas e antenas das invasoras. Caso sejam decapitadas na batalha, a cabeça fica grudada nos inimigos, impedindo o voo deles. 
+                Nem todas as espécies desenvolveram métodos de defesa agressivos.
+
+                <br><br>
+
+                <img src="IMAGENS/abelhacomportamento.jpg" class="mobile-image">
+
+                Nas caixas observadas os horários em que se registrou o maior número de atividades de saída e entrada de abelhas foram
+                entre 11:00 e 15:00 h, nestes horários o valor de temperatura estava elevada, sendo a média entre 29 e 30°C.
+
+                <br><br>
+
+                <img src="IMAGENS/abelhacomportamento2.jpg" class="mobile-image">
+
+            </p>
+        </div>
+        <div class="divimagem">
+            <img src="IMAGENS/img_Comeia_Jatai.jfif" class="img">
+            <img src="IMAGENS/img_Comeia_2_Jatai.jfif" class="img mtcara">
+        </div>
+    </div>
+    <center><p style="color: #a65c02; size: 5px;">®pesquisa por: Murilo Trida e Samuel</p><br>
+        <div class="menu-flutuante">
+            <button class="botao-menu" onclick="toggleMenu()">
+                <div class="palito"></div>
+                <div class="palito"></div>
+                <div class="palito"></div>
+            </button>
+            <div class="opcoes-menu">
+                <a href="principal.html">Página Inicial</a>
+                <a href="galeria.html">Galeria</a>
+            </div>
+        </div>
+        <script>
+            function toggleMenu() {
+                document.querySelector('.opcoes-menu').classList.toggle('ativo');
+            }
+        </script>
+</body>
+
+</html>

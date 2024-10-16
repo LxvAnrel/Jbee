@@ -1,0 +1,206 @@
+@font-face {
+    font-family: 'Tommy';
+    src: url('Tommy.otf');
+}
+
+body {
+    background-color: #f7ed8d;
+    font-family: 'Tommy', sans-serif;
+    margin: 0;
+    padding: 0;
+    /* background-size: cover; */
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#principal {
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+    margin-top: 30px;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+#principal img {
+    border-radius: 12px;
+    max-width: 100%;
+    height: auto;
+}
+
+#menu {
+    background: #faea55;
+    padding: 10px;
+    border-radius: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 30px;
+    margin: auto;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    animation: tituloFade 5s ease-in-out infinite;
+}
+
+a {
+    text-decoration: none;
+    color: #a65c02;
+    padding-right: 15px;
+    display: inline-block;
+}
+
+a:hover {
+    color: white;
+    font-size: 25px;
+    transition: 200ms linear;
+}
+
+ul {
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    margin: 1px;
+    padding: 5px;
+}
+
+.lista1 {
+    display: inline-block;
+}
+
+.lista1:hover {
+    background: #faee86;
+}
+
+.lista1:hover .lista2 {
+    display: block;
+}
+
+.lista2 {
+    position: absolute;
+    width: 200px;
+    display: none;
+}
+
+.lista-link {
+    background: #faee86;
+    display: block;
+}
+
+.link {
+    display:block !important;
+}
+
+.lista-link:hover {
+    background: #e8d106;
+}
+
+#divBusca {
+    background-color: #f7ed8d;
+    border: solid 2px #f2eec7;
+    border-radius: 10px;
+    width: 300px; 
+    height: 32px;
+    box-shadow: 0 0 12px rgb(0, 0, 0, 0.1);
+    position: relative; 
+}
+
+#txtBusca {
+    background-color: transparent;
+    padding-left: 10px;
+    font-size: 18px;
+    border: none;
+    height: 32px;
+    width: calc(100% - 50px); 
+    float: left; 
+}
+
+#btnBusca {
+    border: none;
+    height: 32px;
+    border-radius: 12px;
+    width: 60px;
+    font-weight: bold;
+    background: #f7ea65;
+    position: absolute; 
+    right: 8px; 
+    top: 0; 
+}
+
+#divBusca img {
+    float: left;
+    width: 25px;
+    height: 25px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+input {
+    color: white;
+}
+
+.fotos {
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    width: 100%;
+    padding: 20px 0;
+    justify-content: center;
+}
+
+.imglink {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    transition: all 0.3s ease;
+    justify-self: center;
+}
+
+.imglink:hover {
+    box-shadow: 2px 5px 5px #a65c02;
+    background: hsla(54, 92%, 75%, 0.367);
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    #principal {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    #menu {
+        flex-direction: column;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    #divBusca {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .fotos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .imglink {
+        max-width: 150px;
+    }
+}
+
+@media (max-width: 480px) {
+    .imglink {
+        max-width: 120px;
+    }
+}

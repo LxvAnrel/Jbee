@@ -1,0 +1,322 @@
+@font-face{
+    font-family: 'Tommy';
+    src: url('Tommy.otf');
+}
+
+.design{
+    padding: 4.5rem 0;
+}
+
+body{
+    background-color: #f7ed8d;
+    font-family: 'Tommy', sans-serif;
+}
+
+.imglink {
+    width: 200px;
+}
+
+.design-item:hover{
+    transform: scale(1.2);
+}
+
+.design-content{
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;   
+        width: 110%;
+        height: 23vh;
+}
+
+.imglink:hover {
+    box-shadow: 2px 5px 5px #a65c02;
+    background: hsla(54, 92%, 75%, 0.367);
+}
+
+a{
+    text-decoration: none;
+    color: #a65c02;
+    padding-right: 15px;
+    display: inline-block;
+}
+
+a:hover{
+    color: white;
+    font-size: 25px;
+    transition: 200ms linear;
+    
+}
+
+ul {
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+  
+li{
+    margin: 1px;
+    padding: 5px;
+}
+
+.lista1 {
+    display: inline-block;
+    margin: 5px 10px;
+    position: relative;
+    transition: background-color 0.3s ease;
+}
+
+.lista1:hover {
+    background: #faee86;
+}
+
+.lista1:hover .lista2 {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+}
+
+.lista2 {
+    position: absolute;
+    width: 200px;
+    display: none;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    background-color: #faea55;
+    border-radius: 0 0 12px 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.lista-link {
+    background: #faee86;
+    display: block;
+    padding: 8px 12px;
+    transition: background-color 0.3s ease;
+}
+
+.link {
+    display: block !important;
+    transition: color 0.3s ease; /* Adiciona uma transição suave */
+}
+
+.lista-link:hover {
+    background: #e8d106;
+}
+
+#divBusca {
+    background-color: #f7ed8d;
+    border: solid 2px #f2eec7;
+    border-radius: 10px;
+    width: 300px; 
+    height: 32px;
+    box-shadow: 0 0 12px rgb(0, 0, 0, 0.1);
+    position: relative; 
+  }
+  
+  #txtBusca {
+    background-color: transparent;
+    padding-left: 10px;
+    font-size: 18px;
+    border: none;
+    height: 32px;
+    width: calc(100% - 50px); 
+    float: left; 
+  }
+  
+  #btnBusca {
+    border: none;
+    height: 32px;
+    border-radius: 12px;
+    width: 60px;
+    font-weight: bold;
+    background: #f7ea65;
+    position: absolute; 
+    right: 8px; 
+    top: 0; 
+  }
+  
+  #divBusca img {
+    float: left;
+    width: 25px;
+    height: 25px;
+    margin-top: 5px;
+    margin-left: 5px;
+  }
+  
+
+input{
+    color: white;
+}
+
+p{
+    color: #a65c02;
+    size: 10px;
+    text-align: center;
+}
+
+#menu {
+    background: #faea55;
+    padding: 10px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    box-shadow: 0 0 12px rgb(0, 0, 0, 0.1);
+    margin-left: 2vh;
+    margin-right: 2vh;
+}
+
+.menu-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.lista1 {
+    display: inline-block;
+    margin: 5px 10px;
+}
+
+h1.titulo {
+    margin-top: 15px;
+}
+
+h1{
+    font-size: 30px;
+    margin:  auto;
+    text-align: center;
+    text-shadow: black;
+    animation: tituloFade 5s  ease-in-out infinite;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.galeria-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 2vw;
+    padding: 0 2vh;
+    margin-left: 2vh;
+    margin-right: 2vh;
+}
+
+.galeria-itens{
+    width: calc(33.33% - 2vw); /* Alterado para ocupar 1/3 da largura em telas maiores */
+    max-width: 300px; /* Mantém o tamanho máximo */
+    height: 300px;
+    border: 8px solid #f7ed8d;
+    box-shadow: 5px 5px 5px #a65c02;
+    flex-grow: 1;
+    border-radius: 30px;
+    padding-right: 0px;
+    margin-bottom: 2vw; /* Adiciona margem inferior */
+    transition: transform 0.3s ease; /* Suaviza a transição do hover */
+}
+
+.galeria-itens:hover{
+    transform: scale(1.05); /* Reduz um pouco o efeito de escala */
+}
+
+.galeria-itens img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 22px; /* Ajustado para considerar a borda */
+}
+
+/* Adicione estas media queries para responsividade */
+@media screen and (max-width: 1024px) {
+    .galeria-itens {
+        width: calc(50% - 2vw); /* 2 itens por linha em tablets */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .galeria-itens {
+        width: calc(100% - 2vw); /* 1 item por linha em smartphones */
+        height: auto; /* Altura automática para manter proporção */
+        aspect-ratio: 1 / 1; /* Mantém as imagens quadradas */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .galeria-container {
+        gap: 3vw;
+        padding: 0 1vh;
+        margin-left: 1vh;
+        margin-right: 1vh;
+    }
+
+    .galeria-itens {
+        border-width: 4px; /* Reduz a borda em telas menores */
+    }
+}
+
+/* Media queries para responsividade do menu */
+@media screen and (max-width: 768px) {
+    #menu {
+        padding: 10px 5px;
+    }
+
+    .menu-items {
+        justify-content: center;
+    }
+
+    .lista1 {
+        position: relative; /* Mantém o posicionamento relativo */
+    }
+
+    .lista2 {
+        position: absolute;
+        width: 200px;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 100%;
+        background-color: #faea55;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        border-radius: 0 0 12px 12px;
+    }
+
+    .lista1:hover .lista2 {
+        display: block;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .lista-link {
+        padding: 10px; /* Aumenta o padding para melhor toque em dispositivos móveis */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #menu {
+        padding: 5px;
+        margin-left: 1vh;
+        margin-right: 1vh;
+    }
+
+    h1.titulo {
+        font-size: 20px;
+    }
+
+    .lista1 {
+        margin: 3px;
+    }
+
+    .lista2 {
+        width: 180px; /* Reduz um pouco a largura em telas muito pequenas */
+        background-color: #f7ed8d; /* Muda a cor de fundo para contrastar em telas muito pequenas */
+    }
+}

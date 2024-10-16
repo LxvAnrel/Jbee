@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JBee Meliponário</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+
+    <link rel="shortcut icon" href="IMAGENS/Jbee.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div class="background">
+        <div class="header">
+            <div class="buttons">
+                <a href="marmelada.html"><button>Início</button></a>
+                <a href="caracteristicas_marmelada.html"><button class="btn-large">Características</button></a>
+                <a href="comportamento_marmelada.html"><button class="btn-large">Comportamento</button></a>
+                <a href="curiosidades_marmelada.html"><button>Curiosidades</button></a>
+            </div>
+        </div>
+        <div class="maintext">
+            <p class="text">
+                <b>Características Gerais e Hábitos</b>
+
+                <br><br>
+
+                Onde se encontra <br>
+                A abelha-marmelada (Frieseomelitta varia) é uma abelha nativa do Brasil, pois tem área de ocorrência do sudoeste Mexicano ao sudeste brasileiro,
+                encontrada em florestas da Amazônia, em vegetação de caatinga e no cerrado.
+
+                <br><br>
+
+                <img src="IMAGENS/abelhamarmeladacomp.jpeg" class="mobile-image">
+
+                Alimentação: Se alimentam de néctar e pólen, contribuindo para a polinização enquanto coletam recursos.<br>
+                Forrageamento: São ativas durante o dia, voando em busca de flores para coletar alimento.
+
+                <br><br>
+
+                <img src="IMAGENS/abelhamarmeladansei.jpeg" class="mobile-image">
+
+                Reprodução: A rainha é responsável pela postura de ovos, enquanto as operárias cuidam da colônia.<br>
+                Comunicação: Utilizam feromônios e comportamentos de dança para se comunicar e informar sobre fontes de alimento.
+
+                <br><br>
+
+                Sociabilidade: Vivem em colônias sociais, cooperando na construção do ninho, cuidado com as larvas e coleta de alimento.<br>
+                Ninho: Construem ninhos em locais protegidos, como troncos ocos ou buracos em árvores, usando cera e barro.
+            </p>
+        </div>
+        <div class="divimagem">
+            <img src="IMAGENS/abelhamarmeladacomp.jpeg" class="img">
+            <img src="IMAGENS/abelhamarmeladansei.jpeg" class="img mtcara">
+        </div>
+    </div>
+    <center><p style="color: #a65c02; size: 5px;">®pesquisa por: Lucas e Marcela</p><br>
+        <div class="menu-flutuante">
+            <button class="botao-menu" onclick="toggleMenu()">
+                <div class="palito"></div>
+                <div class="palito"></div>
+                <div class="palito"></div>
+            </button>
+            <div class="opcoes-menu">
+                <a href="principal.html">Página Inicial</a>
+                <a href="galeria.html">Galeria</a>
+            </div>
+        </div>
+        <script>
+            function toggleMenu() {
+                document.querySelector('.opcoes-menu').classList.toggle('ativo');
+            }
+        </script>
+</body>
+
+</html>
