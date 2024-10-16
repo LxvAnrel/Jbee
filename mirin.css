@@ -40,12 +40,31 @@ body {
     box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
 }
 
-h1 {
+.menu-buttons {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 20px; /* Adiciona espaço entre os botões */
+}
+
+h1.titulo {
     font-size: 30px;
-    margin: auto;
+    margin: 10px 0;
     text-align: center;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
     animation: tituloFade 5s ease-in-out infinite;
+    color: #a65c02;
+    width: 100%;
+    order: -1;
+}
+
+#menu ul {
+    margin: 0;
+    padding: 0;
+}
+
+#menu ul:last-of-type {
+    order: 3;
 }
 
 a {
@@ -181,8 +200,22 @@ input {
         flex-direction: column;
     }
 
-    h1 {
+    .menu-buttons {
+        flex-direction: row; /* Garante que os botões fiquem na mesma linha */
+        justify-content: center;
+    }
+
+    h1.titulo {
         font-size: 24px;
+        margin: 10px 0;
+    }
+
+    #menu ul {
+        order: 2;
+    }
+
+    #menu ul:last-of-type {
+        order: 3;
     }
 
     #divBusca {
