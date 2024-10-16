@@ -50,7 +50,7 @@ Foi utilizado 'grid' para organizar o conteúdo, favor não modificar o display*
     height: max-content;
     margin-top: 150px;
     margin-left: 150px;
-    align-self: center;
+    text-align: justify;   
 }
 .text{
     font-size: 25px;
